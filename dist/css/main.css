@@ -1,0 +1,164 @@
+/*==================================================
+
+    1. Default
+    2. Menu
+    3. Home
+        3.0 - Main Word
+        3.1 - Main Icon
+        3.2 - Background and overlay
+
+================================================= */
+
+
+/* ===== 1. Default ============================ */
+
+:root {
+    --primary-color: #444;
+    --secondary-color: #EDC520;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background: var(--primary-color);
+    color: #fff;
+    margin: 0;
+    height: 100%;
+    font-family: Asap, Jua, 'sans-serif';
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 400;
+}
+
+
+/* ===== 2. Menu ================================ */
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+
+/* ===== 3.0 Main Word ============================ */
+
+main {
+    padding: 4rem;
+    height: 100%;
+}
+
+main #home {
+    overflow: hidden;
+}
+
+#home h1 {
+    margin-top: 20vh;
+}
+
+.lg-heading {
+    font-size: 6rem;
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 0;
+}
+
+
+/* ===== 3.1 Main Icon ============================ */
+
+.icons a{
+    padding: 0.4rem;
+    transition: all 0.25s ease;
+}
+
+.icons a:first-child {
+    padding: 0.4rem 0.4rem 0.4rem 0;
+}
+
+.icons a:hover {
+    color: var(--secondary-color);
+}
+
+/* ===== 3.2 - Background and overlay ============= */
+
+#bg-img {
+    background: url(../img/bg_home.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*背景模糊*/
+#bg-img:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    min-height: 446px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: inherit;
+    filter: blur(2px);
+    z-index: -2;
+}
+
+/*灰色覆蓋*/
+#bg-img .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 446px;
+    background: rgb(68, 68, 68, 50%);
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

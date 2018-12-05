@@ -1,0 +1,14 @@
+{
+  "name": "responsive_portfolio_website_7_parts_traversy_media",
+  "version": "1.0.0",
+  "description": "Responsive portfoliowebsite",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "James Lu",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
