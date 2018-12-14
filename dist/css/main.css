@@ -10,7 +10,7 @@
         3.1 - Main Icon
         3.2 - Background and overlay
     4. About Page
-        
+    5. Work Projects
 
 ================================================= */
 
@@ -363,4 +363,59 @@ main #home {
     text-align: center;
     padding: 10px;
     height: 44px;
+}
+
+/* ===== 4. Work Projects ======================== */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+#work .projects img {
+    width: 100%;
+    border: 3px white solid;
+    
+}
+
+#work .projects img:hover {
+    opacity: 0.5;
+    border-color: var(--secondary-color);
+    transition: all 0.25s ease;
+}
+
+.btn {
+    transition: all 0.25s ease;
+}
+
+.btn.light {
+    display: block;
+    padding: 0.5vh 1vh;
+    border: 0;
+    margin-bottom: 0.3rem;
+    background-color: #c4c4c4;
+    color: black;
+    width: 100%;
+    border-radius: 1px;
+}
+
+.btn.light:hover {
+    background-color: var(--secondary-color);
+}
+
+.btn.dark {
+    display: inline-block;
+    padding: 0.5vh 1vh;
+    border: 0;
+    margin-bottom: 0.3rem;
+    background-color: #191919;
+    color: white;
+    width: 100%;
+    border-radius: 1px;
+}
+
+.btn.dark:hover {
+    background-color: var(--secondary-color);
+    color: black;
 }
